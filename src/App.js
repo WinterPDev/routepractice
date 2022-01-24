@@ -6,6 +6,7 @@ import {
   Route
 } from "react-router-dom";
 import Param from './components/Param';
+import HelloStyle from './components/Hellostyle';
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
             <h1>Welcome</h1>
           </Route>
           <Route path="/:value" exact component={Param}>
+          </Route>
+          <Route path="/:value/:colorname/:bgcolor">
+            <HelloStyle />
           </Route>
         </Switch>
 
